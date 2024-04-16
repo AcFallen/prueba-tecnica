@@ -45,18 +45,24 @@ touch .env
 DATABASE_URL="mysql://root:1234@localhost:3306/to_do_db"
 ```
 
-6. Generamos el cliente de Prisma y corremos las migraciones para tener nuestro modelo de Tasks en nuestra base de datos.
+6. Crear una instancia en nuetra base de datos con el nombre de nuestro DATABASE_URL (/to_do_db), para que prisma pueda establecer la conexion y crear los modelos puesto en nuetro archivo (schema.prisma)
+
+```sql
+CREATE DATABASE to_do_db
+```
+
+7. Generamos el cliente de Prisma y corremos las migraciones para tener nuestro modelo de Tasks en nuestra base de datos.
 ```bash
 npx prisma generate
 npx prisma migrate dev
 ```
 
-7. Iniciamos nuestro servidor de express y tendriamos nuestro servidor backend de nuestro proyecto.
+8. Iniciamos nuestro servidor de express y tendriamos nuestro servidor backend de nuestro proyecto.
 ```bash
 npm run dev
 ```
 
-8. Abrimos una nueva terminal y entramos a nuestra carpeta de frontend eh instalamos las dependencias.
+9. Abrimos una nueva terminal y entramos a nuestra carpeta de frontend eh instalamos las dependencias.
 
 ```bash
 cd frontend/
@@ -64,7 +70,7 @@ npm i
 npm run dev
 ```
 
-9. Con estos pasos tenemos nuestros servidores tanto de backend como frontend en terminales distintas.
+10. Con estos pasos tenemos nuestros servidores tanto de backend como frontend en terminales distintas.
 
 ## Funcionalidades
 
