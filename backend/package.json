@@ -17,7 +17,8 @@
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
     "joi": "^17.12.3",
-    "prisma": "^5.12.1"
+    "prisma": "^5.12.1",
+    "socket.io": "^4.7.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
