@@ -21,10 +21,12 @@ export async function createTask(req, res) {
   const { title, description } = req.body;
   const task = await conexion.task.create({
     data: {
-      title,
-      description,
+      title
     },
   });
+
+
+
   return res.status(201).json({
     content: task,
   });
@@ -50,7 +52,6 @@ export async function updateTask(req, res) {
     },
     data: {
       title,
-      description,
       status
     },
   });
