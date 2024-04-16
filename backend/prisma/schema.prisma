@@ -16,13 +16,7 @@ datasource db {
 model Task {
   id          Int      @id @default(autoincrement())
   title       String
-  description String
-  status      TaskStatus @default(PENDING)
+  status      Boolean @default(false)
 
   @@map("tasks")
-}
-
-enum TaskStatus {
-  PENDING
-  COMPLETED
 }
