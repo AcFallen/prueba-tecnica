@@ -40,7 +40,7 @@ npm i
 touch .env
 ```
 
-5. Agregamos la DATABASE_URL a nuestro variable de entorno, tengamos en cuanto que podemos configurar tanto el puerto de nuestra BD como el nombre. En mi caso este es mi URL
+5. Agregamos la DATABASE_URL a nuestras variables de entorno (.env), tengamos en cuanto que podemos configurar tanto el puerto de nuestra BD como el nombre. En mi caso este es mi URL
 ```
 DATABASE_URL="mysql://root:1234@localhost:3306/to_do_db"
 ```
